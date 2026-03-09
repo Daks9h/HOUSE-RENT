@@ -1,0 +1,218 @@
+/* Admin Light Theme Styles (Matching Public Homepage) */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.admin-layout {
+  min-height: 100vh;
+  background-color: #f9fafb; /* Light background from Home */
+  font-family: 'Outfit', sans-serif;
+  color: #1a202c; /* Real dark text */
+}
+
+/* Navbar */
+.admin-navbar {
+  background-color: #ffffff; /* Clean white */
+  border-bottom: 1px solid #e2e8f0;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+}
+
+.admin-nav-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-logo-admin {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #ff5a5f; /* Coral accent from Home */
+  text-decoration: none;
+  letter-spacing: -1px;
+}
+
+.admin-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hi-admin {
+  color: #4a5568; /* Slightly muted dark text */
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.admin-logout-btn {
+  background-color: #f7fafc; /* Very light gray button */
+  color: #1a202c;
+  border: 1px solid #e2e8f0;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.admin-logout-btn:hover {
+  background-color: #ff5a5f;
+  color: white;
+  border-color: #ff5a5f;
+}
+
+/* Main Content Area */
+.admin-main-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+/* Tabs */
+.admin-tabs {
+  display: flex;
+  gap: 15px;
+  border-bottom: 2px solid #edf2f7;
+  margin-bottom: 30px;
+}
+
+.admin-tab {
+  background: transparent;
+  border: none;
+  color: #718096;
+  padding: 12px 20px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.admin-tab:hover {
+  color: #2d3748;
+}
+
+.admin-tab.active {
+  color: #ff5a5f;
+  border-bottom-color: #ff5a5f; /* Coral active border */
+}
+
+/* Common Box for Content inside Tabs */
+.admin-content-box {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 30px;
+  min-height: 500px;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+}
+
+/* Common Table Styles for Admin */
+.admin-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.admin-table th {
+  background-color: #f8fafc; /* Very light slate for header */
+  color: #4a5568;
+  padding: 16px 20px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.admin-table td {
+  padding: 16px 20px;
+  border-bottom: 1px solid #edf2f7;
+  color: #2d3748;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.admin-table tr:last-child td {
+  border-bottom: none;
+}
+
+.admin-table tr:hover td {
+  background-color: #f8fafc;
+}
+
+/* Shared badges/actions */
+.role-badge {
+  color: #4e73df; /* Keep blue for roles for contrast */
+  font-weight: 700;
+  background-color: #eaecf4;
+  padding: 4px 10px;
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 0.85rem;
+}
+
+.status-granted {
+  color: #10b981; /* Green */
+  font-weight: 700;
+}
+
+.status-not-granted {
+  color: #ef4444; /* Red */
+  font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  .admin-nav-container {
+    padding: 0 20px;
+  }
+  .admin-main-content {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-navbar {
+    height: auto;
+    padding: 15px 0;
+  }
+  .admin-nav-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .admin-tabs {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 5px;
+    gap: 5px;
+  }
+  .admin-tab {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+  .admin-content-box {
+    padding: 15px;
+  }
+  .admin-table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .admin-table th, .admin-table td {
+    padding: 12px 10px;
+    font-size: 0.85rem;
+  }
+  .brand-logo-admin {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,141 @@
+.about-container {
+  font-family: 'Outfit', sans-serif;
+  color: #1a202c;
+  line-height: 1.6;
+}
+
+.max-width {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Hero Section */
+.about-hero {
+  background: radial-gradient(circle at 50% 50%, #f8fafc 0%, #fff 100%);
+  padding: 120px 0 80px;
+  text-align: center;
+}
+
+.about-hero-content h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+  letter-spacing: -1px;
+}
+
+.about-hero-content .highlight {
+  color: #4e73df;
+}
+
+.about-hero-content p {
+  font-size: 1.4rem;
+  color: #4a5568;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Mission Section */
+.about-mission {
+  padding: 100px 0;
+  background: white;
+}
+
+.mission-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.mission-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  font-weight: 800;
+}
+
+.mission-text p {
+  font-size: 1.15rem;
+  color: #4a5568;
+  margin-bottom: 20px;
+}
+
+.mission-visual {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.stat-card {
+  background: #f8fafc;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+  transition: transform 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  border-color: #4e73df;
+}
+
+.stat-card h3 {
+  font-size: 2.5rem;
+  color: #4e73df;
+  margin-bottom: 5px;
+  font-weight: 800;
+}
+
+.stat-card p {
+  color: #718096;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Values Section */
+.about-values {
+  padding: 100px 0;
+  background: #f8fafc;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.value-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+  border: 1px solid #edf2f7;
+}
+
+.value-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.value-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.value-card p {
+  color: #718096;
+}
+
+@media (max-width: 900px) {
+  .mission-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+}
