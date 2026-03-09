@@ -1,0 +1,27 @@
+/* Global App Styles */
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #f8f9fc;
+}
+
+#root {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+/* Base Link reset for consistent look */
+a {
+  text-decoration: none;
+}

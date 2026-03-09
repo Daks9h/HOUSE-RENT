@@ -1,0 +1,146 @@
+/* Reusable Property Card Styles */
+
+.universal-property-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 1px solid #f2f2f2;
+}
+
+.universal-property-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Media area with image placeholder */
+.card-media {
+  height: 180px;
+  background: #f8f9fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.media-placeholder {
+  font-size: 4rem;
+}
+
+.featured-tag {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #1cc88a;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+/* Content area */
+.card-details {
+  padding: 20px;
+}
+
+.meta-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.property-type-label {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: #4e73df;
+  background: rgba(78, 115, 223, 0.1);
+  padding: 3px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.rating-star {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #f6c23e;
+}
+
+.property-name-title {
+  margin: 0 0 8px 0;
+  font-size: 1.25rem;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.property-location-info {
+  margin: 0 0 20px 0;
+  font-size: 0.85rem;
+  color: #858796;
+}
+
+/* Footer with price and action */
+.card-footer-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #f8f9fc;
+  padding-top: 15px;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.price-container .amount {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #333;
+}
+
+.price-container .per-mon {
+  font-size: 0.75rem;
+  color: #b7b9cc;
+}
+
+.action-trigger-btn {
+  background-color: #4e73df;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.action-trigger-btn:hover {
+  background-color: #2e59d9;
+}
+@media (max-width: 768px) {
+  .universal-property-card {
+    border-radius: 12px;
+  }
+  .card-media {
+    height: 160px;
+  }
+  .card-details {
+    padding: 15px;
+  }
+  .property-name-title {
+    font-size: 1.1rem;
+  }
+  .action-trigger-btn {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+  .amount {
+    font-size: 1.1rem;
+  }
+}

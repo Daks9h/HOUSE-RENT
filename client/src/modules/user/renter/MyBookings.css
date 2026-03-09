@@ -1,0 +1,116 @@
+/* Renter History Table Styles */
+
+.renter-history-container {
+  padding: 30px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Tabs reused from AllProperties.css for consistency */
+.renter-tabs {
+  display: flex;
+  gap: 20px;
+  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 30px;
+  padding-bottom: 2px;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #64748b;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.tab-btn.active {
+  color: #4e73df;
+}
+
+.tab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #4e73df;
+  border-radius: 3px;
+}
+
+/* Table Card */
+.history-table-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+}
+
+.card-header {
+  padding: 20px 25px;
+  border-bottom: 1px solid #f1f5f9;
+  background: #fcfdfe;
+}
+
+.card-header h3 {
+  margin: 0;
+  color: #1e293b;
+  font-size: 1.25rem;
+}
+
+.booking-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.booking-table th {
+  background: #f8fafc;
+  padding: 15px 25px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.booking-table td {
+  padding: 18px 25px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+.id-cell { font-family: monospace; color: #64748b; }
+.addr-cell { font-weight: 500; color: #1e293b; }
+
+.status-pill {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.status-pill.pending { background: #fff7ed; color: #f59e0b; }
+.status-pill.approved { background: #dcfce7; color: #16a34a; }
+.status-pill.booked { background: #dcfce7; color: #16a34a; }
+.status-pill.rejected { background: #fee2e2; color: #dc2626; }
+
+.empty-row {
+  text-align: center;
+  padding: 50px !important;
+  color: #94a3b8;
+}
+
+@media (max-width: 900px) {
+  .table-responsive {
+    overflow-x: auto;
+  }
+}

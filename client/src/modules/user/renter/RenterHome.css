@@ -1,0 +1,180 @@
+/* Renter Dashboard Styles */
+
+.renter-dashboard {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dashboard-header {
+  margin-bottom: 35px;
+}
+
+.dashboard-header .title {
+  color: #4e73df;
+  margin: 0 0 5px 0;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.dashboard-header .subtitle {
+  color: #858796;
+  font-size: 1rem;
+}
+
+/* Stats Row */
+.renter-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.renter-stat-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: transform 0.3s;
+}
+
+.renter-stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-icon-box {
+  width: 55px;
+  height: 55px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+
+.stat-info h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.stat-info p {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #858796;
+}
+
+/* Sections Layout */
+.renter-sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.shadow-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.shadow-card h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1.1rem;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+/* Action Grid */
+.action-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.renter-action-btn {
+  padding: 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  text-align: center;
+  transition: opacity 0.2s;
+}
+
+.renter-action-btn.search {
+  background-color: #4e73df;
+  color: white;
+}
+
+.renter-action-btn.bookings {
+  background-color: #f8f9fc;
+  color: #4e73df;
+  border: 1px solid #4e73df;
+}
+
+.renter-action-btn:hover {
+  opacity: 0.9;
+}
+
+/* Activity Items */
+.activity-item {
+  display: flex;
+  gap: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid #f8f9fc;
+}
+
+.activity-item:last-child {
+  border-bottom: none;
+}
+
+.activity-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-top: 6px;
+  flex-shrink: 0;
+}
+
+.activity-indicator.success { background: #1cc88a; }
+.activity-indicator.warning { background: #f6c23e; }
+.activity-indicator.danger { background: #e74a3b; }
+
+.activity-text {
+  font-size: 0.9rem;
+  color: #5a5c69;
+  line-height: 1.4;
+}
+
+.activity-text .time {
+  display: block;
+  font-size: 0.75rem;
+  color: #b7b9cc;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .renter-dashboard {
+    padding: 20px 15px;
+  }
+  .dashboard-header .title {
+    font-size: 1.6rem;
+  }
+  .renter-stat-card {
+    padding: 15px;
+  }
+  .renter-sections {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .shadow-card {
+    padding: 15px;
+  }
+}

@@ -1,0 +1,54 @@
+/* All Users Styles (Admin) */
+
+.admin-table-container {
+  width: 100%;
+}
+
+.role-badge {
+  color: #4e73df; /* Keep blue for roles for contrast */
+  font-weight: 700;
+  background-color: #eaecf4;
+  padding: 4px 10px;
+  border-radius: 8px;
+  display: inline-block;
+  font-size: 0.85rem;
+}
+
+.status-granted {
+  color: #10b981; /* Green */
+  font-weight: 700;
+}
+
+.status-not-granted {
+  color: #dc2626; /* Red */
+  font-weight: 700;
+}
+
+.action-btn-grant,
+.action-btn-ungrant {
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+
+.action-btn-grant {
+  background-color: #10b981;
+  color: white;
+}
+
+.action-btn-grant:hover {
+  background-color: #059669;
+}
+
+.action-btn-ungrant {
+  background-color: #ef4444;
+  color: white;
+}
+
+.action-btn-ungrant:hover {
+  background-color: #dc2626;
+}
